@@ -202,26 +202,6 @@
   .firm-chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
   .firm-chip{ font-size:12.5px; font-weight:600; padding:6px 14px; border-radius:100px; background: rgba(14,176,164,0.08); border:1px solid rgba(14,176,164,0.2); color:var(--teal); }
 
-  /* ---------- Pricing ---------- */
-  .pricing-wrap{ margin-top:44px; }
-  .pricing-card{ background: var(--bg-card); border:1px solid rgba(14,176,164,0.2); border-radius:20px; overflow:hidden; position:relative; }
-  .pricing-card::before{ content:''; position:absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg, var(--teal) 0%, var(--teal-light) 100%); }
-  .pricing-card-head{ display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:22px; padding:40px 44px 32px; border-bottom:1px solid var(--border); }
-  .pricing-card-name{ font-family:'DM Sans', sans-serif; font-size:24px; font-weight:700; margin-bottom:6px; }
-  .pricing-card-meta{ font-size:13.5px; color:var(--text-muted); }
-  .pricing-card-price{ font-family:'DM Sans', sans-serif; font-size:44px; font-weight:300; letter-spacing:-1.5px; line-height:1; color:var(--teal); }
-  .pricing-card-price-note{ font-size:13px; color:var(--text-muted); margin-top:8px; text-align:right; }
-  .pricing-card-body{ padding:32px 44px 40px; }
-  .pricing-card-body-label{ font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-muted); margin-bottom:16px; }
-  .includes-list{ list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:12px 32px; margin-bottom:32px; }
-  .includes-list li{ font-size:13.5px; color:var(--text-secondary); padding-left:20px; position:relative; line-height:1.5; }
-  .includes-list li::before{ content:''; position:absolute; left:0; top:8px; width:6px; height:6px; border-radius:50%; background:var(--teal); }
-  @media (max-width:640px){
-    .pricing-card-head{ padding:28px 24px 24px; }
-    .pricing-card-body{ padding:24px 24px 28px; }
-    .includes-list{ grid-template-columns:1fr; }
-  }
-
   footer{ padding:36px 40px; background: var(--bg-primary); border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; }
   .footer-brand{ display:flex; align-items:center; gap:10px; font-family:'DM Sans', sans-serif; font-weight:600; font-size:13px; color:var(--text-secondary); }
   .footer-brand .nova-logo{ height:16px; }
@@ -847,44 +827,6 @@
       </div>
     </div>
     <p class="firms-disclaimer fade-in">Ejemplos de perfil profesional de ediciones anteriores; Nova no garantiza la representación de firmas concretas en futuras ediciones.</p>
-  </div>
-</section>
-
-<section id="inversion" class="alt">
-  <div class="container">
-    <div class="fade-in">
-      <span class="section-label">Propuesta económica</span>
-      <h2 class="section-title">La inversión</h2>
-      <p class="section-sub">Una propuesta única que incluye los dos tracks, la plataforma educativa, el profesorado y 1 año de membresía Nova para los alumnos.</p>
-    </div>
-    <div class="pricing-wrap fade-in">
-      <div class="pricing-card">
-        <div class="pricing-card-head">
-          <div>
-            <div class="pricing-card-name">Career Bootcamp Specialized</div>
-            <div class="pricing-card-meta">2 tracks × 6 sesiones · 12 sesiones totales · ~32 horas de programa</div>
-          </div>
-          <div>
-            <div class="pricing-card-price">{{PRECIO}} €</div>
-            <div class="pricing-card-price-note">Hasta {{PLAZAS}} alumnos pre‑seleccionados por track</div>
-          </div>
-        </div>
-        <div class="pricing-card-body">
-          <div class="pricing-card-body-label">Qué incluye</div>
-          <ul class="includes-list">
-            <li>Dos tracks completamente independientes y especializados</li>
-            <li>Un tutor del sector acompañando cada track de principio a fin</li>
-            <li>Día de simulación final con 6 profesionales dando feedback individual</li>
-            <li>Materiales, presentaciones y guidebooks por track</li>
-            <li>Pre‑work en vídeo + plataforma educativa Nova</li>
-            <li>NPS, análisis y sesión de clausura</li>
-            <li>Hasta {{PLAZAS}} alumnos pre‑seleccionados por Comillas por track</li>
-            <li>Fast track de nominación a Nova para todos los alumnos</li>
-          </ul>
-          <a class="btn-primary" href="mailto:info@novatalent.com?subject=Career%20Bootcamp%20para%20Comillas">Hablemos de vuestra universidad →</a>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
